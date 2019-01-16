@@ -57,6 +57,7 @@ function callApiWithAccessToken(accessToken) {
         url: "https://api.dev.theatreers.com/shows",
         headers: {
             'Authorization': 'Bearer ' + accessToken,
+            'Access-Control-Allow-Origin': 'https://api.dev.theatreers.com',
         },
     }).done(function (data) {
         logMessage("Web APi returned:\n" + JSON.stringify(data));
