@@ -3,7 +3,7 @@
 var applicationConfig = {
     clientID: '74568295-9e88-47db-bd81-e99a23fdcee8',
     authority: "https://theatreers.b2clogin.com/theatreers.onmicrosoft.com/B2C_1_SiUpIn",
-    b2cScopes: ["openid", "https://theatreers.onmicrosoft.com/devshows/shows_read"]
+    b2cScopes: ["openid", "https://theatreers.onmicrosoft.com/show-api"]
     }; 
 
 var clientApplication = new Msal.UserAgentApplication(applicationConfig.clientID, applicationConfig.authority, function (errorDesc, token, error, tokenType) {
